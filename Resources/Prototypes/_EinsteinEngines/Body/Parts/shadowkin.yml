@@ -22,11 +22,18 @@
       reagents:
       - ReagentId: Fat
         Quantity: 3
-      - ReagentId: Blood
+      - ReagentId: BlackBlood
         Quantity: 10
   - type: Damageable
     damageContainer: Biological # Shadowkin
     damageModifierSet: Shadowkin
+  - type: WoundableVisuals # Goobstation
+    damageOverlayGroups:
+      Brute:
+        sprite: _Shitmed/Mobs/Effects/brute_damage.rsi
+        color: "#1c1624"
+      Burn:
+        sprite: _Shitmed/Mobs/Effects/burn_damage.rsi
 
 - type: entity
   id: ChestShadowkin
